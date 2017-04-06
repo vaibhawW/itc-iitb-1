@@ -1,0 +1,34 @@
+{% extends 'main/index.html' %}
+{% load staticfiles %}
+
+{% block headtitle %}
+STAB | IITB
+{% endblock %}
+
+{% block fbpost %}
+<!-- EXAMPLE
+<a href="#">
+	<img src="{% static  'assets/images/img1.jpg' %}" alt="" width="70">
+</a>
+<div class="post-content">
+	<h5><a href="#">FB  ID NEEDED</a></h5>
+	<span>UPdATE THIS</span>
+</div> 
+-->
+{% endblock %}
+
+
+{% block mainpost %}
+	<center>
+		<div style="font-size:300%">Welcome to RC Plane 2015</div>
+		<br>
+		<br>
+			<div style="font-size:200%">RC Plane flying demo!</div>
+		<br>
+		<hr style="height:2px;background-color:black;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/N2AtoC3TmgA" frameborder="0" allowfullscreen></iframe><br>
+		<hr style="height:2px;background-color:#F0F0F0; width:600px">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Bry5nbirDQQ" frameborder="0" allowfullscreen></iframe>
+		<hr style="height:2px;background-color:black;">
+	</center>
+{% endblock %}

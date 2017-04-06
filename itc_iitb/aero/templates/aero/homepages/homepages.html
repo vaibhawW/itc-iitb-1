@@ -1,0 +1,30 @@
+{% extends 'main/index.html' %}
+{% load staticfiles %}
+
+{% block headtitle %}
+STAB | IITB
+{% endblock %}
+
+{% block fbpost %}
+<!-- EXAMPLE
+<a href="#">
+	<img src="{% static  'assets/images/img1.jpg' %}" alt="" width="70">
+</a>
+<div class="post-content">
+	<h5><a href="#">FB  ID NEEDED</a></h5>
+	<span>UPdATE THIS</span>
+</div> 
+-->
+{% endblock %}
+
+
+{% block mainpost %}
+<img src="{% static  'assets/images/aero.png' %}" alt="" class="img-responsive"/>         
+<div class="blog-desc">
+	<h2>AEROMODELLING CLUB</h2>
+	<p>Ever wondered what makes stuff airborne? Ever harboured a dream to sail to the tune of the winds?</p>
+	<p>Aeromodelling is a science for some, a sport for many...but for us it is a hobby. We, at Aeromodelling Club, IIT Bombay are group of aeromodelling and aviation enthusiasts sharing a unique passion
+	of flying and an innate desire to push the bounds of airspace like they have never been before.</p>
+	<p>Come be a part of us...come celebrate AVIATION!!!</p>
+</div>
+{% endblock %}

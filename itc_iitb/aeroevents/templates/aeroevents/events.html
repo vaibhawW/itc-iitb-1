@@ -1,0 +1,67 @@
+{% extends 'main/index.html' %}
+{% load staticfiles %}
+
+{% block headtitle %}
+ITC | IITB
+{% endblock %}
+
+{% block fbpost %}
+<!-- EXAMPLE
+<a href="#">
+	<img src="{% static  'assets/images/img1.jpg' %}" alt="" width="70">
+</a>
+<div class="post-content">
+	<h5><a href="#">FB  ID NEEDED</a></h5>
+	<span>UPdATE THIS</span>
+</div>
+-->
+{% endblock %}
+
+
+{% block mainpost1 %}
+	<div class="blog-desc">
+		<h2>List of events Conducted</h2>
+		<div class="space-30"></div>
+		<div style="height: auto; width:100%";>
+			<section style="padding:20px;margin-bottom:20px;">
+				<div class="messagebox" >
+					<div class="headerr">ITSP 2015</div>
+					<div class="message">
+						<div class="space-30"></div>
+						Summer projects by 1st year students<br><br>
+						<div class="timedate">&nbsp;&nbsp;<i class="ion-ios-calendar"></i>&nbsp;{{happeningdate}}</div>
+						<p>Find content and photographs <a href="https://drive.google.com/open?id=0B9-fEq0JwBbZZkxVdnlhODdIUkE" target="_blank">HERE</a></p>
+					</div>
+					<div class="imagegame">
+					<div class="space-20"></div>
+						<img src="events/images/6.jpg" alt="" width=100%/>
+					</div>
+				</div>
+				<div class="space-10"></div>
+			</section>
+		</div>
+	</div>
+{% endblock %}
+
+{% block mainpost %}
+	<div class="blog-desc container-fluid">
+		<h2>LIst of Events Conducted</h2>
+		<div class="space-30"></div>
+		{% for x in object_list %}
+			<section style="margin-bottom:20px;overflow:hidden" >
+				<div class="messagebox" style="padding:1%">
+					<div class="headerr">{{x.title}}</div>
+					<div class="row">
+						<div class="message col-sm-6"> <img src="{{x.imagelink}}" width='100%'> </div>
+						<div class="message col-sm-6">
+							{{x.smalldiscription}}	<br>
+													<br>
+							<div class="timedate">&nbsp;&nbsp;<i class="glyphicon glyphicon-calendar"></i>&nbsp;{{x.happeningdate|date:'M d,y'}}</div>
+							<p>Find content and photographs <a href="{{x.drivelink}}" target="_blank">HERE</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		{% endfor %}
+	</div>
+{% endblock %}
