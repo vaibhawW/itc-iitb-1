@@ -1,10 +1,10 @@
 from django.db import models
 
-class Events(models.Model):
+class Event(models.Model):
 	title = models.CharField(max_length=140)
 	happeningdate = models.DateTimeField()
-	smalldiscription = 	models.TextField()
-	largediscription = models.TextField()
+	smalldescription = 	models.TextField()
+	largedescription = models.TextField()
 	imagelink = models.CharField(max_length=500)
 	drivelink = models.CharField(max_length=500)
 	date = models.DateTimeField()

@@ -1,4 +1,4 @@
 from django.contrib import admin
-from aeroevents.models import Events
+from aeroevents.models import Event
 
-admin.site.register(Events)
+admin.site.register(Event)
