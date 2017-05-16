@@ -1,0 +1,104 @@
+{% load staticfiles %}
+
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+  <!-- Start Top Search -->
+  <div class="top-search">
+    <div class="container">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="ion-search"></i></span>
+        <form action="search.html" id="cse-search-box">
+        <input type="hidden" name="cx" value="015844430348475139480:9eplv9x8g6c" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name='q' class="form-control" placeholder="Search this site..." style="width:88%; padding-right:2%;"/>
+        <button type="submit" class="btn btn-cta btn-primary btn-lg">Search</button>
+        </form>
+      <span class="input-group-addon close-search" ><i class="ion-android-close"></i></span>
+      </div>
+    </div>
+  </div>
+  <!-- End Top Search -->
+  <div class="container">
+    <!-- Start search Navigation -->
+    <div class="search-nav pull-right">
+
+      <a href="javascript:void(0)"><i class="ion-search"></i></a>
+
+    </div>
+    <!-- Start search Navigation -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="{% static  'assets/images/logo-light.png' %}" alt="" class="logo-default">
+        <img src="{% static  'assets/images/logo.png' %}" alt="" class="logo-scroll">
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" onmouseover="revamp()">About<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://stab-iitb.org/vision-of-stab-team-2014-15">Vision</a></li>
+            <li><a href="https://stab-iitb.org/hall-of-fame">Hall Of Fame</a></li>
+            <li ><a href="#" onmouseover="tooglezz()">Report</a>
+              <div id="chill" style=" cursor:pointer" link="red" alink="red">
+              <ul class="boogy" style="float:right; list-style-type:square, default; padding-right:10%;">
+                <li><a href="https://stab-iitb.org/InstiReview-HobbyClubs-TechTeams" style="color:inherit; text-decoration:none;" >Institute Review 2013</a></li>
+                <li><a href="https://stab-iitb.org/annual_report_2014_2015" style="color:inherit; text-decoration:none;" >Annual Report 2014-2015</a></li>
+
+              </ul>
+              </div>
+            </li>
+            <li ><a href="#" onmouseover="tooglez()">Contacts</a>
+              <div id="contacto" style=" cursor:pointer">
+              <ul style="float:right; list-style-type:square, default; padding-right:10%; ">
+                <li><a href="https://stab-iitb.org/team-stab-2016" style="color:inherit; text-decoration:none;" >Team 2016-2017</a></li>
+                <li><a href="https://stab-iitb.org/stab-alumni" style="color:inherit; text-decoration:none;" >Alumni</a></li>
+                <li><a href="https://stab-iitb.org/faculty-advisor-and-mentor" style="color:inherit; text-decoration:none;" >Faculty Advisors/ Mentors</a></li>
+              </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clubs <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/aeromodelling-club">Aeromodelling Club</a></li>
+            <li><a href="/erc">Elec-Robo Club</a></li>
+            <li><a href="https://stab-iitb.org/krittika/">Krittika</a></li>
+            <li><a href="http://mnp-club.github.io/">Math And Physics Club</a></li>
+            <li><a href="http://www.wncc-iitb.org/">Web And Coding Club</a></li>
+          </ul>
+        </li>
+        <li><a href="/srg">Student Reading Group</a></li>
+        <li><a href="https://stab-iitb.org/wiki/Main_Page">STAB Wiki</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tech Teams <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.iitbracing.org/">IITB Racing</a></li>
+            <li><a href="http://www.auv-iitb.org/Web/">AUV IITB</a></li>
+            <li><a href="http://www.aero.iitb.ac.in/pratham/">Pratham</a></li>
+            <li><a href="http://www.marssociety.org.in">Mars Rover</a></li>
+            <li><a href="http://www.umic-iitb.com/">Innovation Cell</a></li>
+            <li><a href="http://teamshunya.in/">Team Shunya</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IITB Corner <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://stab-iitb.org/lightsaber">Light Saber</a></li>
+            <li><a href="https://stab-iitb.org/media/WELpermission.pdf">Web Lab Permission Form</a></li>
+            <li><a href="/tech-gcrankings-2016-17">Tech GC Ranking</a></li>
+            <li><a href="https://stab-iitb.org/calendar2016">Tech Calender</a></li>
+          </ul>
+        </li>
+        <li><a href="/login" class="btn btn-rounded btn-primary">Login</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>

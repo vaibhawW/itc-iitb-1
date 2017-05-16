@@ -15,9 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from . import views
+import main.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^aeromodelling/', include('aero.urls')),
-    url(r'^aeromodelling', include('aero.urls')),
+    url(r'^$',main.views.index),
+    url(r'^team-2017-18$',main.views.team),
+    url(r'^login$',main.views.login),
+    url(r'^srg', include('srg.urls')),
+    url(r'^tech-gcrankings-2016-17$',main.views.gcrankings),
+    url(r'^aeromodelling-club', include('aero.urls')),
+    url(r'^erc', include('erc.urls')),
 ]

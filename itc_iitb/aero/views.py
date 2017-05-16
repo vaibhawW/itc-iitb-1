@@ -8,15 +8,15 @@ def vision(request):
 
 def events(request):
 	return render(request,'aero/events/events.html');
-	
+
 def team(request):
-	return render(request,'aero/teams/teams.html'); 	
+	return render(request,'aero/teams/teams.html');
 
 def rcplane(request):
-	return render(request,'aero/rcplanes/rcplanes.html'); 
+	return render(request,'aero/rcplanes/rcplanes.html');
 
 def gallery(request):
-	return render(request,'aero/gallery/gallery.html'); 
+	return render(request,'aero/gallery/gallery.html');
 
 def search(request):
-	return render(request,'aero/search/search.html'); 
+	return render(request,'aero/search/search.html');

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>STAB IITB</title>
+
+        <!-- Bootstrap -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/ionicons/css/ionicons.min.css" rel="stylesheet">        
+        <link href="assets/bower_components/flexslider/flexslider.css" rel="stylesheet">
+        <link rel='stylesheet' type="text/css" href="assets/dzsparallaxer/dzsparallaxer.css"/>
+        <!--main css file-->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--pre-loader-->
+        <div id="preloader"></div>
+        <!--pre-loader-->
+        <!--back to top-->
+        <a href="#" class="scrollToTop"><i class="ion-ios-arrow-up"></i></a>
+        <!--back to top end-->
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+            <!-- Start Top Search -->
+            <div class="top-search">
+                <div class="container">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="ion-search"></i></span>
+                        <form action="search.html" id="cse-search-box">
+                        <input name="cx" value="015844430348475139480:9eplv9x8g6c" type="hidden">
+                        <input name="ie" value="UTF-8" type="hidden">
+                        <input name="q" class="form-control" placeholder="Search this site..." style="width:88%; padding-right:2%;" type="text">
+                        <button type="submit" class="btn btn-cta btn-primary btn-lg">Search</button>
+                        </form>
+                    <span class="input-group-addon close-search"><i class="ion-android-close"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+            <div class="container">
+                <!-- Start search Navigation -->
+                <div class="search-nav pull-right">
+
+                    <a href="javascript:void(0)"><i class="ion-search"></i></a>
+
+                </div>     
+                <!-- Start search Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://homepages.iitb.ac.in/%7Evaibhaw/STAB/aero/index.html">
+                        <img src="STAB%20%7C%20IITB_files/logo-light.png" alt="" class="logo-default">
+                        <img src="STAB%20%7C%20IITB_files/logo.png" alt="" class="logo-scroll">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" onmouseover="revamp()">About<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://stab-iitb.org/vision-of-stab-team-2014-15">Vision</a></li>
+                                <li><a href="https://stab-iitb.org/hall-of-fame">Hall Of Fame</a></li>
+                                <li><a href="#" onmouseover="tooglezz()">Report</a>
+                                    <div id="chill" style="cursor: pointer; display: none;" link="red" alink="red">
+                                    <ul class="boogy" style="float:right; list-style-type:square, default; padding-right:10%;">
+                                        <li><a href="https://stab-iitb.org/InstiReview-HobbyClubs-TechTeams" style="color:inherit; text-decoration:none;">Institute Review 2013</a></li>
+                                        <li><a href="https://stab-iitb.org/annual_report_2014_2015" style="color:inherit; text-decoration:none;">Anual Report 2014-2015</a></li>
+
+                                    </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#" onmouseover="tooglez()">Contacts</a>
+                                    <div id="contacto" style="cursor: pointer; display: none;">
+                                    <ul style="float:right; list-style-type:square, default; padding-right:10%; ">
+                                        <li><a href="https://stab-iitb.org/team-stab-2016" style="color:inherit; text-decoration:none;">Team 2016-2017</a></li>
+                                        <li><a href="https://stab-iitb.org/stab-alumni" style="color:inherit; text-decoration:none;">Alumni</a></li>
+                                        <li><a href="https://stab-iitb.org/faculty-advisor-and-mentor" style="color:inherit; text-decoration:none;">Faculty Advisors/ Mentors</a></li>
+                                    </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clubs <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://stab-iitb.org/aeromodelling-club">Aeromodelling Club</a></li>
+                                <li><a href="https://stab-iitb.org/electronics-club/">Electronics Club</a></li>
+                                <li><a href="https://stab-iitb.org/krittika/">Krittika</a></li>
+                                <li><a href="https://stab-iitb.org/math-and-physics-club/">Math And Physics Club</a></li>
+                                <li><a href="https://stab-iitb.org/robotics-club/">Robotics Club</a></li>
+                                <li><a href="http://www.wncc-iitb.org/">Web And Coding Club</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://stab-iitb.org/srg/">Student Reading Group</a></li>
+                        <li><a href="https://stab-iitb.org/wiki/Main_Page">STAB Wiki</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tech Teams <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.iitbracing.org/">IITB Racing</a></li>
+                                <li><a href="http://www.auv-iitb.org/Web/">AUV IITB</a></li>
+                                <li><a href="http://www.aero.iitb.ac.in/pratham/">Pratham</a></li>
+                                <li><a href="http://www.marssociety.org.in/">Mars Rover</a></li>
+                                <li><a href="http://www.umic-iitb.org/">Innovation Cell</a></li>
+                                <li><a href="http://teamshunya.in/">Team Shunya</a></li>                   
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IITB Corner <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://stab-iitb.org/lightsaber">Light Saber</a></li>
+                                <li><a href="https://stab-iitb.org/media/WELpermission.pdf">Web Lab Permission Form</a></li>
+                                <li><a href="https://stab-iitb.org/tech-gc-points-2016">Tech GC Ranking</a></li>
+                                <li><a href="https://stab-iitb.org/calendar2016">Tech Calender</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="btn btn-rounded btn-primary">Login</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <section id="home" class="dzsparallaxer auto-init dzsparallaxer---window-height use-loading" style="position: relative; height: 800px;" data-options='{  mode_scroll: "normal" }'>
+
+            <div class="divimage dzsparallaxer--target " data-src="assets/images/bg1.png" style="width: 100%; height: 130%; background-image: url()">
+                <div class="hero-parallax">
+                    <div class="hero-inner">
+                        <div class="hero-content">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <div class="hero-static">
+                                            <h1>Student Technical Activities Body</h1>
+                                            <BR><BR>
+                                            <div class="buttons">
+                                                <p><a href="#" class="btn btn-xl btn-primary">ITSP 2016</a></p>
+                                                <p><a href="#" class="btn btn-xl btn-primary">INSTITUTE TECHNICAL COORDINATORS FORM</a></p>
+                                                <p><a href="#" class="btn btn-xl btn-primary">ITSP 2016 PROJECTS</a><a href="#" class="btn btn-xl btn-primary">ITSP 2016 VIDEOS</a><p>
+                                                <P><a href="#" class="btn btn-xl btn-primary">ITSP 2016 MENTORS FORM</a></P>
+                                                <!-- <a href="#" class="btn btn-xl btn-white-border">Sign Up Free</a> -->
+                                            </div>
+                                        </div>                          </p>
+                        </div>
+                                              </p>
+                        </div>
+                    
+            </div><!--parallax image div-->
+            <div class="mouse-down scroll-to"><a href="#agency"><i class="ion-mouse"></i></a></div>
+        </section>
+        <!--intro section end-->
+
+        <section class="features-section border-bottom">
+            <div class="container"><h1 class="center-title">HOBBY CLUBS</h1>
+                <div class="row">
+                    <div class="col-sm-8 col-md-4 margin-b-30">
+                        <div class="feature-box-center text-center">
+                            <i class="ion-paper-airplane"></i>
+                            <h4 class="text-capitalize">Aeromodelling Club</h4>
+                        </div>
+                        <div class="feature-box-center">
+                            <p>
+                                The Aeromodelling Club, IIT-Bombay envision the club becoming open to more people through activities that are fun to perform and require minimal input .Club also want the entry barrier – both financial and otherwise -for participating in aero modelling events to be reduced, so that a lot more people can participate. Apart from increasing participation, Club desire to encourage people to innovate a lot by extending all possible help to them
+                            </p>
+                            <a href="https://stab-iitb.org/aeromodelling-club" class="btn btn-xl" >Visit Website</a>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-8 col-md-4 margin-b-30">
+                        <div class="feature-box-center text-center">
+                            <i class="ion-flash"></i>
+                            <h4 class="text-capitalize">Electronics Club</h4>
+                        </div>
+                        <div class="feature-box-center">
+                            <p>
+                                Current scenario: Majority of the club activities are focused on freshmen. Main issue with senior participation is that they have not been able to relate themselves with the sessions that are planned keeping them in mind. 
+                                <ul>
+                                    <li>Improve the participation of PGs in the club activities</li>
+                                    <li>Increase involvement of seniors through informal meets and try to get product level outputs</li>
+                                    <li>Give a purpose to each and every learning session that is organized</li>
+                            </p>
+                            <a href="https://stab-iitb.org/electronics-club" class="btn btn-xl">Visit Website</a>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-8 col-md-4 margin-b-30">
+                        <div class="feature-box-center text-center">
+                            <i class="ion-ios-cloudy-night-outline"></i>
+                            <h4 class="text-capitalize">Krittika</h4>
+                        </div>
+                        <div class="feature-box-center">
+                            <p>
+                                Every one of us is amazed by the spectacle of the night sky and feels curious about its mysteries that lay hidden in plain sight. But very few follow it up as they grow up. At Krittika, we provide you an opportunity to do just that. Krittika is IIT Bombay’s focal point for amateur astronomers and casual stargazers alike. This year I want to focus my efforts on increasing the outreach of the club. 
+                            </p>
+                            <a href="https://stab-iitb.org/krittika" class="btn btn-xl">Visit Website</a>
+                        </div>
+                    </div><!--/col-->
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-md-4 margin-b-30">
+                        <div class="feature-box-center text-center">
+                            <i class="ion-stats-bars"></i>
+                            <h4 class="text-capitalize">Maths and Physics Club</h4>
+                        </div>
+                        <div class="feature-box-center">
+                            <p>
+                                Our events vary from casual events such as movie screenings, demonstrations of physical phenomenon and quizzes to formal events such as lectures and Olympiad level paper solving. We have always motivated students to explore Physics and Maths, we also fund students for making their own demonstrations and experiments. Our flagship event, Bazinga, is a quiz that relies solely on your concepts rather than the dry and conventional algorithmic procedure of solving questions with pre-defined methods. 
+                            </p>
+                            <a href="https://stab-iitb.org/math-and-physics-club" class="btn btn-xl">Visit Website</a>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-8 col-md-4 margin-b-30">
+                        <div class="feature-box-center text-center">
+                            <i class="ion-wrench"></i>
+                            <h4 class="text-capitalize">Robotics Club</h4>
+                        </div>
+                        <div class="feature-box-center">
+                            <p>
+                                <ul>
+                                    <li>To get a ‘club feeling’ within the students of IIT Bombay</li>
+                                    <li>Increasing participation of all the Student’s including PG’s, not just freshmen in club</li>
+                                    <li>Bringing out a product and not just a working model out of projects and other club events activities</li>
+                                </ul>
+                            </p>
+                            <a href="https://stab-iitb.org/robotics-club" class="btn btn-xl">Visit Website</a>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-8 col-md-4 margin-b-30">
+                        <div class="feature-box-center text-center">
+                            <i class="ion-ios-person-outline"></i>
+                            <h4 class="text-capitalize">Web and Coding Club</h4>
+                        </div>
+                        <div class="feature-box-center">
+                            <p>
+                                While students in IIT Bombay learn programming in their first year, they usually drop it after that. One of our goals is to help these people carry on with programming and retain it as the useful skill it is. For the people who already program, we wish to maintain a community of programmers from all spheres and help people reach greater heights. We also have a focus on improving IITB's student participation in open source, thus increasing the institute's footprint and instilling a sense of giving back to the community. 
+                            </p>
+                            <a href="http://www.wncc-iitb.org/" class="btn btn-xl">Visit Website</a>
+                        </div>
+                    </div><!--/col-->
+                </div>
+            </div>
+        </section><!--end features section-->
+
+        
+
+        <section class="showcase-section">
+            <div class="space-90"></div>
+            <div class="container"><h1 class="center-title">INNOVATION PROGRAM AND INFRASTRUCTURE</h1>
+            <div class="container">
+                <div class="row vertical-align-child">
+                    <div class="col-md-5 margin-b-30">
+                        <h3>
+                            Technovation
+                        </h3>
+                        <p>
+                            Did you ever have an innovative idea but you just couldn’t get it going? Innovative technologies are the foundation of everything existing around you whether its new iPhone or your credit cards. But innovating new technologies needs money, inspiring leaders, dedicated teams and experience. This is where technovation steps in. What is Technovation? Technovation is a platform for students to float innovative projects, recruit teams, get funded, find mentors and realize their dream projects. Put simply its an expressway to innovation.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-rounded">Learn More</a>
+                        <!-- <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list">
+                                    <li><i class="ion-ios-arrow-thin-right"></i>Lorem ipsum dolor</li>
+                                    <li><i class="ion-ios-arrow-thin-right"></i>Duis lacinia dolor quis</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list">
+                                    <li><i class="ion-ios-arrow-thin-right"></i>Lorem ipsum dolor</li>
+                                    <li><i class="ion-ios-arrow-thin-right"></i>Duis lacinia dolor</li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-md-6 col-md-offset-1 margin-b-30">
+                        <img src="assets/images/shot1.png" alt="" class="img-responsive center-img">
+                    </div>
+                </div>
+                <div class="space-60"></div>
+            </div>
+        </section><!--end showcase section-->
+        <section class="showcase-section grey-bg">
+            <div class="space-90"></div>
+            <div class="container">
+                <div class="row vertical-align-child">
+                    <div class="col-md-7 margin-b-30">
+                        <img src="assets/images/shot2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-5 margin-b-30">
+                        <h3>
+                            TINKERERS' LAB 
+                        </h3>
+                        <p class="margin-b-20">
+                            The dictionary defines a tinkerer as one who enjoys experimenting with machines. This lab is for all! Such tinkerers who love to do, for those who want limitless hands-on experience, for those who can spend hours tinkering. If you are turned on by machines and technology and integrated circuits, this place is built keeping you in mind.
+
+                            Tinkerers needed something better, so we've got it for you. Tinkerers’ Lab has all you will need for projects and prototyping. We’ve got modern electrical and mechanical equipment in place and more is coming soon. The fresh and enabling environment makes this the perfect place for ideating, implementing and innovating. We have coffee too!
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-rounded">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="space-30"></div>
+        </section><!--end showcase section-->
+
+        <section class="pricing-section">
+            <div class="space-90"></div>
+            <div class="container">
+                <div class="center-title">
+                    <h1>INTERNATIONAL COMPETING TECHNICAL TEAMS</h1>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 margin-b-30">
+                        <div class="price-box">
+                            <div class="price-header">
+                                <h1>IITB RACING</h1>
+                                <h4>FORMULA STUDENT</h4>
+                            </div>
+                            <ul class="list-unstyled price-features">
+                                <li>The IITB Racing team had recently participated in 
+the Formula Student 2014, the largest student motorsport competition in 
+the world. Formula Student is run by the Institute of Mechanical 
+Engineers- IMechE, a UK based body, which challenges student engineers 
+to design, build and race a single seat race-car within a year.<br><br><br><br></li>
+                                
+                            </ul>
+                            <div class="price-footer">
+                                <a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-4 margin-b-30">
+                        <div class="price-box best-plan">
+                            <div class="price-header">
+
+                                <h1>AUV IITB</h1>
+                                <h4>AUVSI Robosub Competition</h4>
+                            </div>
+                            <ul class="list-unstyled price-features">
+                                <li>AUV-IITB comprises of highly enthusiastic and hard 
+working technocrats ranging from bright-eyed freshmen to driven senior 
+undergraduates and tech-experienced post-graduates spanning various 
+branches of engineering like Mechanical, Electrical, Software, 
+Aerospace, Material Science and Civil at Indian Institute of Technology 
+Bombay (IIT Bombay).<br><br><br></li>
+                                
+                            </ul>
+                            <div class="price-footer">
+                                <a href="#" class="btn btn-rounded btn-white-border">VISIT WEBSITE</a>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-4 margin-b-30">
+                        <div class="price-box">
+                            <div class="price-header">
+
+                                <h1>Pratham</h1>
+                                <h4>Student Satellite</h4>
+                            </div>
+                            <ul class="list-unstyled price-features">
+                                <li>The IIT Bombay Student Satellite Project is a 
+landmark project taken up by IIT Bombay students. The objective of this 
+project is to make IIT Bombay a respected centre for advancement in 
+Satellite and Space Technology in the world. The project aims at 
+launching at least 5 satellites within the next few years. These 
+Satellites could be test-beds for new technology that is being developed
+ in the institute and also a method for space qualification.</li>
+                                 
+                            </ul>
+                            <div class="price-footer">
+                                <a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                </div><!-- /ROW -->
+                <div class="row">
+                    <div class="col-sm-4 margin-b-30">
+                        <div class="price-box">
+                            <div class="price-header">
+                                <h1>Mars Rover</h1>
+                                <h4>Mars Society of India</h4>
+                            </div>
+                            <ul class="list-unstyled price-features">
+                                <li> The Mars Society India (MSI) is an initiative by 
+IIT Bombay students, taking the country a step further towards Mars 
+exploration. 
+                                     IIT Bombay currently being the chief patron, we are
+ the official Indian chapter of The Mars Society, an international space
+ advocacy dedicated to promoting the human exploration and settlement of
+ the planet Mars. We are in the processing of expanding and extending 
+our reach throughout the scientific community of India as well as 
+beyond. </li>
+                                
+                            </ul>
+                            <div class="price-footer">
+                                <a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-4 margin-b-30">
+                        <div class="price-box best-plan">
+                            <div class="price-header">
+
+                                <h1>Innovation Cell</h1>
+                                <h4>Intelligent Ground Vehicle Competition</h4>
+                            </div>
+                            <ul class="list-unstyled price-features">
+                                <li>Founded by Prof C Amarnath, Innovation Cell, 
+formerly known as UMIC (Unmesh Mashruwala Innovation Cell), aims to 
+foster an atmosphere of creativity, innovation, discovery and 
+exploration on the campus. Innovation Cell provides infrastructural 
+facilities to nurture inventions among students from various 
+disciplines.<br><br><br><br><br></li>
+                                
+                            </ul>
+                            <div class="price-footer">
+                                <a href="#" class="btn btn-rounded btn-white-border">VISIT WEBSITE</a>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-sm-4 margin-b-30">
+                        <div class="price-box">
+                            <div class="price-header">
+
+                                <h1>Team Shunya</h1>
+                                <h4>Solar Decathon</h4>
+                            </div>
+                            <ul class="list-unstyled price-features">
+                                <li>Team Shunya, the first Indian team to get selected 
+in Solar Decathlon Europe, aims to change the meaning of comfortable and
+ affordable living for the middle class Indian households. 
+                                     The Solar Decathlon is an international student 
+competition taking place every two years. This competition was created 
+in 2002 by the U.S. Department of Energy in order to develop the 
+transmission of the knowledge and the research in the field of the green
+ buildings, in particular solar energy.</li>
+                                 
+                            </ul>
+                            <div class="price-footer">
+                                <a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                </div>
+            </div>
+            <div class="space-60"></div>
+        </section><!--end pricing section-->
+
+
+        
+        <!-- jQuery plugins-->
+        <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="assets/js/jquery-migrate.min.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/bower_components/flexslider/jquery.flexslider-min.js"></script>
+        <script src="assets/js/modernizr.custom.97074.js" type="text/javascript"></script>  
+        <script src="assets/js/template-custom.js" type="text/javascript"></script>
+        <script src="assets/dzsparallaxer/dzsparallaxer.js" type="text/javascript"></script> 
+    </body>
+</html>

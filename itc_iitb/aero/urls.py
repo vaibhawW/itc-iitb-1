@@ -18,11 +18,11 @@ from django.conf.urls import url,include
 from . import views
 
 urlpatterns = [
-    url(r'^$',views.index,name='index'), url(r'^/index.html$', views.index,name='index'),  url(r'^/index$', views.index,name='index'),
-    url(r'^/vision$', views.vision,name='vision'), url(r'^/vision.html$', views.vision,name='vision'),
-    url(r'^/events$', include('aeroevents.urls')), url(r'^/events.html$', include('aeroevents.urls')),
-    url(r'^/team$',views.team,name='team'), url(r'^/team.html$',views.team,name='team'),
-    url(r'^/rcplanes$',views.rcplane,name='rcplane'), url(r'^/rcplane.html$',views.rcplane,name='rcplane'),
-    url(r'^/gallery$',views.gallery,name='gallery'), url(r'^/gallery.html$',views.gallery,name='gallery'),
-    url(r'^/search$',views.search,name='search'), url(r'^/search.html$',views.search,name='search'),
+    url(r'^$',views.index,name='index'),
+    url(r'^vision$', views.vision,name='vision'),
+    url(r'^events$', include('aeroevents.urls')),
+    url(r'^team$',views.team,name='team'),
+    url(r'^rcplanes$',views.rcplane,name='rcplane'),
+    url(r'^gallery$',views.gallery,name='gallery'),
+    url(r'^search$',views.search,name='search'),
 ]
