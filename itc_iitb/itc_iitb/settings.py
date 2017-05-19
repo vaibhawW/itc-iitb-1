@@ -30,10 +30,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'main',
     'aero',
-    'aeroevents',
     'erc',
+    'krittika',
+    'main',
     'srg',
     'django.contrib.admin',
     'django.contrib.auth',

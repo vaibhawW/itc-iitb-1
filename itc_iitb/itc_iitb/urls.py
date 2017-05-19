@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^aeromodelling-club', include('aero.urls')),
     url(r'^erc', include('erc.urls')),
+    url(r'^krittika', include('krittika.urls')),
     url(r'^$',main.views.index),
     url(r'^alumni',main.views.alumni),
     url(r'^hall-of-fame$',main.views.hof),

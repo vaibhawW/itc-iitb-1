@@ -16,13 +16,15 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from . import views
+from django.views.generic import ListView, DetailView
+from aero.models import Event
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
-    url(r'vision$', views.vision,name='vision'),
-    url(r'events$', include('aeroevents.urls')),
-    url(r'team$',views.team,name='team'),
-    url(r'rcplanes$',views.rcplane,name='rcplane'),
+    url(r'events$', ListView.as_view(queryset=Event.objects.all().order_by("-happeningdate"),template_name="aero/events/events.html"),name='events'),
     url(r'gallery$',views.gallery,name='gallery'),
+    url(r'rcplanes$',views.rcplane,name='rcplane'),
     url(r'search$',views.search,name='search'),
+    url(r'team$',views.team,name='team'),
+    url(r'vision$', views.vision,name='vision'),
 ]
