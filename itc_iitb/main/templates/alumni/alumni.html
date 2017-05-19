@@ -1,0 +1,129 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!-- added some style at the bottom of head -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+          {% block title %}
+          {% endblock %}
+      </title>
+      <!-- Bootstrap -->
+      <link href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/bower_components/flexslider/flexslider.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/dzsparallaxer/dzsparallaxer.css' %}" rel='stylesheet' type="text/css"/>
+      <!-- Base MasterSlider style sheet -->
+      <link href="{% static 'assets/masterslider/style/masterslider.css' %}" rel="stylesheet" />
+      <!-- Master Slider Skin -->
+      <link href="{% static 'assets/masterslider/skins/default/style.css' %}" rel='stylesheet' type='text/css'>
+      <!--main css file-->
+      <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <style>
+         .navbar-default.navbar-transparent.shrink .navbar-nav > li > a {
+             color: #fbfbfb;
+            }
+      </style>
+      {% block nav %}
+          {% include "main/navbars/nav-dark.html" %}
+      {% endblock %}
+   </head>
+   <body class="boxed-layout">
+      <!--pre-loader-->
+      <div id="preloader"></div>
+      <!--pre-loader-->
+      <!--back to top-->
+      <a href="#" class="scrollToTop"><i class="ion-ios-arrow-up"></i></a>
+      <!--back to top end-->
+      <section class="pricing-section">
+         <div class="space-90"></div>
+         <div class="space-90"></div>
+         <div class="space-90"></div>
+
+         <div class="container" align="center" >
+            <span style="font-size: 5vw;">Previous Stab Teams</span>
+            <div class="space-40"></div>
+            <div class="row">
+              <div class="col-sm-3 col-md-3" style="color:white;padding:20px;">
+                 <a href="/team-2015-16" style="text-decoration: none;color:white">
+                    <div style="background-color:#555;height:200px;font-size:3vmax;line-height:200px">
+                       2016
+                    </div>
+                 </a>
+              </div>
+               <div class="col-sm-3 col-md-3" style="color:white;padding:20px;">
+                  <a href="/team-2015-16" style="text-decoration: none;color:white">
+                     <div style="background-color:#555;height:200px;font-size:3vmax;line-height:200px">
+                        2015
+                     </div>
+                  </a>
+               </div>
+               <div class="col-sm-3 col-md-3" style="color:white;padding:20px;">
+                  <a href="/team-2014-15" style="text-decoration: none;color:white">
+                     <div style="background-color:#555;height:200px;font-size:3vmax;line-height:200px">
+                        2014
+                     </div>
+                  </a>
+               </div>
+               <div class="col-sm-3 col-md-3" style="color:white;padding:20px;">
+                  <a href="/team-2013-14" style="text-decoration: none;color:white">
+                     <div style="background-color:#555;height:200px;font-size:3vmax;line-height:200px">
+                        2013
+                     </div>
+                  </a>
+               </div>
+               <div class="col-sm-3 col-md-3" style="color:white;padding:20px;">
+                  <a href="/team-2012-13" style="text-decoration: none;color:white">
+                     <div style="background-color:#555;height:200px;font-size:3vmax;line-height:200px">
+                        2012
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="space-20"></div>
+      </section>
+      <!--end pricing section-->
+      {% block footer %}
+          {% include "main/footer.html" %}
+      {% endblock %}
+
+      <!-- jQuery plugins-->
+      <script src="{% static 'assets/bower_components/jquery/dist/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/js/jquery-migrate.min.js' %}"></script>
+      <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+      <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/bower_components/flexslider/jquery.flexslider-min.js' %}"></script>
+      <script src="{% static 'assets/js/modernizr.custom.97074.js' %}" type="text/javascript"></script>
+      <script src="{% static 'assets/js/template-custom.js' %}" type="text/javascript"></script>
+      <script src="{% static 'assets/dzsparallaxer/dzsparallaxer.js' %}" type="text/javascript"></script>
+      <script src="{% static 'assets/masterslider/masterslider.min.js' %}"></script>
+      <script type="text/javascript">
+         var slider = new MasterSlider();
+
+         slider.control({insertTo: '#masterslider'});
+         slider.control('bullets');
+
+         slider.setup('masterslider', {
+             width: 1024,
+             height: 640,
+             space: 0,
+             view: 'basic',
+             layout: 'auto',
+             fullscreenMargin: 0,
+             speed: 10,
+             loop:true
+         });
+
+      </script>
+   </body>
+</html>

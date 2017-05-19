@@ -1,0 +1,520 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!-- added some style at the bottom of head -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+            {% block title %}
+            {% endblock %}
+      </title>
+      <!-- Bootstrap -->
+      <link href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/bower_components/flexslider/flexslider.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/dzsparallaxer/dzsparallaxer.css' %}" rel='stylesheet' type="text/css"/>
+      <!-- Base MasterSlider style sheet -->
+      <link href="{% static 'assets/masterslider/style/masterslider.css' %}" rel="stylesheet" />
+      <!-- Master Slider Skin -->
+      <link href="{% static 'assets/masterslider/skins/default/style.css' %}" rel='stylesheet' type='text/css'>
+      <!--main css file-->
+      <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <style>
+         .navbar-default.navbar-transparent.shrink .navbar-nav > li > a {
+             color: #fbfbfb;
+            }
+      </style>
+      <!-- Static navbar -->
+      {% block nav %}
+          {% include "main/navbars/nav-dark.html" %}
+      {% endblock %}
+   </head>
+   <body class="boxed-layout">
+      <!--pre-loader-->
+      <div id="preloader"></div>
+      <!--pre-loader-->
+      <!--back to top-->
+      <a href="#" class="scrollToTop"><i class="ion-ios-arrow-up"></i></a>
+      <!--back to top end-->
+      <section class="pricing-section">
+         <div class="space-90"></div>
+         <div class="container">
+            <div class="center-title">
+               <h1>Team STAB 2016</h1>
+            </div>
+            <div class="row">
+               <div class="col-sm-4 margin-b-30"></div>
+               <div class="col-sm-4 margin-b-30">
+                  <div class="price-box" style="overflow:hidden">
+                     <div class="price-header" style="font-size:1vh;">
+                        <h3 style="color:#FAFAFA;">Chirag Shetty</h3>
+                        <h4>Overall Coordinator</h4>
+                     </div>
+                     <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                        <center>
+                           <img src="{% static 'assets/images/team/2015/chirag.jpg' %}" style="height:375px;margin-left:-196px;position:absolute;left:50%">
+                        </center>
+                     </div>
+                     <div class="price-footer" style="">
+                        <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9892611771</i><br>
+                        <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;chiragcshetty@gmail.com</i>
+                     </div>
+                  </div>
+               </div>
+               <!--/col-->
+               <div class="col-sm-4 margin-b-30"></div>
+            </div>
+         </div>
+         <div class="space-60"></div>
+      </section>
+      <!--end pricing section-->
+
+      <section class="pricing-section">
+         <div class="space-90"></div>
+         <div class="container">
+            <div class="center-title">
+               <h1>Club Managers</h1>
+            </div>
+            <div class="row">
+               <div class="col-sm-4 margin-b-30"></div>
+               <div class="col-sm-4 margin-b-30">
+                  <div class="price-box" style="overflow:hidden">
+                     <div class="price-header" style="font-size:1vh;">
+                        <h3 style="color:#FAFAFA;">Yograj Mandloi </h3>
+                        <h4>Aeromodelling Club</h4>
+                     </div>
+                     <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                        <center>
+                           <img src="{% static 'assets/images/team/2015/raj.jpg' %}" style="width:500px;margin-left:-300px;position:absolute;left:50%">
+                        </center>
+                     </div>
+                     <div class="price-footer" style="">
+                        <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9967341642</i><br>
+                        <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;yrajsm@gmail.com</i>
+                     </div>
+                  </div>
+               </div>
+               <!--/col-->
+               <div class="col-sm-4 margin-b-30"></div>
+            </div>
+         </div>
+      </section>
+      <!--end pricing section-->
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-1 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Atish Aloor</h3>
+                     <h4>Electronics Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/atish.jpg' %}" style="width:500px;margin-left:-300px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9987700750</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;aloor.atish@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-2 margin-b-20"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Deepak Goyadi</h3>
+                     <h4>Electronics Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/deepak.jpg' %}" style="width:600px;margin-left:-300px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9967687636</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;deepakgoyadi@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-1 margin-b-30"></div>
+         </div>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-4 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Pavan Hebbar  </h3>
+                     <h4>Krittika (Astronomy Club)</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/pavan.jpg' %}" style="height:375px;margin-left:-300px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;8879534302</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;rpavanhebbar1996@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-4 margin-b-30"></div>
+         </div>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-1 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Vaibhav Bhosale </h3>
+                     <h4>Maths & Physics Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/vaibhav.jpg' %}" style="width:475px;margin-top:-30px;margin-left:-300px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;940596175</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;vaibhavbhosale15@gmail.com </i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-2 margin-b-20"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Darshil Dave </h3>
+                     <h4>Maths & Physics Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/darshil.jpg' %}" style="width:600px;margin-left:-300px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9967322436 </i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;darshildave94@gmail.com </i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-1 margin-b-30"></div>
+         </div>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-1 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Rushil Modi  </h3>
+                     <h4>Robotics Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/rushil.jpg' %}" style="width:475px;margin-top:-30px;margin-left:-200px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9167229212</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;rushilmodi28@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-2 margin-b-20"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Pranav Jain </h3>
+                     <h4>Robotics Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/pranav.jpg' %}" style="width:100%;margin-left:00px;position:absolute;left:0%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9167229212 </i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;pranavjain@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-1 margin-b-30"></div>
+         </div>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-1 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Pradyot Prakash </h3>
+                     <h4>Web and Coding Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/pradyot.jpg' %}" style="width:600px;margin-left:-200px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;7208791160</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;pp2105@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-2 margin-b-20"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Shantanu Thakoor  </h3>
+                     <h4>Web and Coding Club</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/shantanu.jpg' %}" style="height:375px;margin-left:-300px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;8976237484</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;shanu.thakoor@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-1 margin-b-30"></div>
+         </div>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-4 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Umang Chhaparia </h3>
+                     <h4>Technovation</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/umang.jpg' %}" style="height:375px;margin-left:-200px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9967346106</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;umang147@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-4 margin-b-30"></div>
+         </div>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-4 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Chetan Agarwal </h3>
+                     <h4>TechGSR</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/chetan.jpg' %}" style="height:375px;margin-left:-200px;position:absolute;left:50%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9167469004</i><br>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-4 margin-b-30"></div>
+         </div>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-4 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;"> Siddharth Bulia </h3>
+                     <h4>Web Manager</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/siddharth.jpg' %}" style="width:100%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9967280880</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;siddharth.bulia@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 margin-b-30"></div>
+            <!--/col-->
+         </div>
+         <div class="row">
+            <div class="col-sm-4">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Shubham Goel </h3>
+                     <h4>Web Conveners</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/shubham.jpg' %}" style="width:100%;">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;8879069817</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;sgoel160@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;"> Kushal Babel </h3>
+                     <h4>Web Conveners</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/babel.jpg' %}" style="width:100%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9967176779</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;babel97kushal@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Anay Tripathi  </h3>
+                     <h4>Web Conveners</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/anay.jpg' %}" style="width:100%">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;anay@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-1 margin-b-30"></div>
+         </div><br>
+      </div>
+      <div align="center"><div style="height:3px;width:50%;background-color:grey;"></div><br></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-1 margin-b-30"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Rutuparn Dalvi </h3>
+                     <h4>Creatives and Media Manager</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/rituparn.jpg' %}" style="width:120%;margin-right:-300px;margin-left:-300px;">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;8454992510</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;dalvi.rutuparn@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-2 margin-b-20"></div>
+            <div class="col-sm-4 margin-b-30">
+               <div class="price-box" style="overflow:hidden">
+                  <div class="price-header" style="font-size:1vh;">
+                     <h3 style="color:#FAFAFA;">Shashanka </h3>
+                     <h4>Creatives and Media Manager</h4>
+                  </div>
+                  <div style="width: auto; margin: 0 auto; overflow: hidden;  position: relative;  height: 375px;">
+                     <center>
+                        <img src="{% static 'assets/images/team/2015/shashanka.jpg' %}" style="width:100%;">
+                     </center>
+                  </div>
+                  <div class="price-footer" style="">
+                     <i class="glyphicon glyphicon-earphone" style="color:black">&nbsp;9967801474</i><br>
+                     <i class=" glyphicon glyphicon-envelope" style="color:black">&nbsp;pewdpi@gmail.com</i>
+                  </div>
+               </div>
+            </div>
+            <!--/col-->
+            <div class="col-sm-1 margin-b-30"></div>
+         </div>
+      </div>
+
+
+      {% block footer %}
+          {% include "main/footer.html" %}
+      {% endblock %}
+
+      <!-- jQuery plugins-->
+      <script src="{% static 'assets/bower_components/jquery/dist/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/js/jquery-migrate.min.js' %}"></script>
+      <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+      <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/bower_components/flexslider/jquery.flexslider-min.js' %}"></script>
+      <script src="{% static 'assets/js/modernizr.custom.97074.js' %}" type="text/javascript"></script>
+      <script src="{% static 'assets/js/template-custom.js' %}" type="text/javascript"></script>
+      <script src="{% static 'assets/dzsparallaxer/dzsparallaxer.js' %}" type="text/javascript"></script>
+      <script src="{% static 'assets/masterslider/masterslider.min.js' %}"></script>
+      <script type="text/javascript">
+         var slider = new MasterSlider();
+
+         slider.control({insertTo: '#masterslider'});
+         slider.control('bullets');
+
+         slider.setup('masterslider', {
+             width: 1024,
+             height: 640,
+             space: 0,
+             view: 'basic',
+             layout: 'auto',
+             fullscreenMargin: 0,
+             speed: 10,
+             loop:true
+         });
+
+      </script>
+   </body>
+</html>

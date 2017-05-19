@@ -19,10 +19,10 @@ from . import views
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
-    url(r'^vision$', views.vision,name='vision'),
-    url(r'^events$', include('aeroevents.urls')),
-    url(r'^team$',views.team,name='team'),
-    url(r'^rcplanes$',views.rcplane,name='rcplane'),
-    url(r'^gallery$',views.gallery,name='gallery'),
-    url(r'^search$',views.search,name='search'),
+    url(r'vision$', views.vision,name='vision'),
+    url(r'events$', include('aeroevents.urls')),
+    url(r'team$',views.team,name='team'),
+    url(r'rcplanes$',views.rcplane,name='rcplane'),
+    url(r'gallery$',views.gallery,name='gallery'),
+    url(r'search$',views.search,name='search'),
 ]

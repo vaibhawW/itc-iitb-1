@@ -26,86 +26,152 @@
 				  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 				<![endif]-->
 				{% block nav %}
-				{% include "main/nav.html" %}
+				{% include "main/navbars/nav-light.html" %}
 				{% endblock %}
 			</head>
 			<body>
 			{% block body %}
 			<section id="home" class="dzsparallaxer auto-init dzsparallaxer---window-height use-loading" style="position: relative; height: 800px;" data-options='{  mode_scroll: "normal" }'>
-				  <div style="width: 100%;height:100%; background-image: url({% static  'assets/images/bg1.png' %})">
+
+					<div class="divimage dzsparallaxer--target " data-src="{% static 'assets/images/bg1.png' %}" style="width: 100%; height: 130%; background-image: url()">
 							<div class="hero-parallax">
 									<div class="hero-inner">
 											<div class="hero-content">
 													<div class="container text-center">
 															<div class="row">
 																	<div class="col-sm-10 col-sm-offset-1">
+																			<div class="hero-static">
 																					<h1>Tech@IITB</h1>
-																					<br><br>
-																					<!--<div class="buttons">
-																							<p><a href="#" class="btn btn-xl btn-primary">ITSP 2016</a></p>
-																							<p><a href="#" class="btn btn-xl btn-primary">INSTITUTE TECHNICAL COORDINATORS FORM</a></p>
-																							<p><a href="#" class="btn btn-xl btn-primary">ITSP 2016 PROJECTS</a><a href="#" class="btn btn-xl btn-primary">ITSP 2016 VIDEOS</a></p>
-																							<p><a href="#" class="btn btn-xl btn-primary">ITSP 2016 MENTORS FORM</a></p>
-																							<!-- <a href="#" class="btn btn-xl btn-white-border">Sign Up Free</a>
-																					</div>-->
-																			</div>
-																	</div>
-											      </div>
+																			</div>                          </p>
+											</div>
+																						</p>
+											</div>
+
 					</div><!--parallax image div-->
+					<div class="mouse-down scroll-to"><a href="#agency"><i class="ion-mouse"></i></a></div>
 			</section>
 			<!--intro section end-->
 
 			<section class="features-section border-bottom">
 					<div class="container"><h1 class="center-title">HOBBY CLUBS</h1>
-							<div class="row">
-									<div class="col-sm-8 col-md-4 margin-b-30">
-											<div class="feature-box-center text-center">
-													<i class="ion-iphone"></i>
-													<h4 class="text-capitalize">Aeromodelling Club</h4>
-													<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-													</p>
+
+					<div>
+
+							<!-- Nav tabs -->
+							<ul class="features-tabs list-inline text-center" role="tablist">
+									<li role="presentation" class="active"><a href="#f1" aria-controls="f1" role="tab" data-toggle="tab">Aeromodelling Club</a></li>
+									<li role="presentation"><a href="#f2" aria-controls="f2" role="tab" data-toggle="tab">Electronics Club</a></li>
+									<li role="presentation"><a href="#f3" aria-controls="f3" role="tab" data-toggle="tab">Krittika</a></li>
+									<li role="presentation"><a href="#f4" aria-controls="f4" role="tab" data-toggle="tab">Maths and Physics Club</a></li>
+									<li role="presentation"><a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">Robotics Club</a></li>
+									<li role="presentation"><a href="#f6" aria-controls="f6" role="tab" data-toggle="tab">Web and Coding Club</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active fade in" id="f1">
+											<div class='row vertical-align-child'>
+													<div class="col-md-6">
+															<h3>Aeromodelling Club</h3>
+															<p>
+															The Aeromodelling Club, IIT-Bombay envision the club becoming open to more people through activities that are fun to perform and require minimal input .Club also want the entry barrier – both financial and otherwise -for participating in aero modelling events to be reduced, so that a lot more people can participate. Apart from increasing participation, Club desire to encourage people to innovate a lot by extending all possible help to them.
+															</p><br><a href="https://stab-iitb.org/aeromodelling-club" class="btn btn-lg btn-primary" >Visit Website</a>
+													</div>
+													<div class='col-md-1'></div>
+													 <div class="col-md-5">
+															 <img src="{% static 'assets/images/aero.png' %}" alt="" class="img-responsive">
+													</div>
 											</div>
-									</div><!--/col-->
-									<div class="col-sm-8 col-md-4 margin-b-30">
-											<div class="feature-box-center text-center">
-													<i class="ion-ios-person-outline"></i>
-													<h4 class="text-capitalize">Electronics and Robotics Club</h4>
-													<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-													</p>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="f2">
+									 <div class='row vertical-align-child'>
+													 <div class="col-md-5">
+															 <img src="{% static 'assets/images/elec/elec.png' %}" alt="" class="img-responsive">
+													</div>
+
+													 <div class="col-md-6">
+															<h3>Electronics Club</h3>
+															<p>
+															Current scenario: Majority of the club activities are focused on freshmen. Main issue with senior participation is that they have not been able to relate themselves with the sessions that are planned keeping them in mind.
+															<ul>
+																	<li>Improve the participation of PGs in the club activities</li>
+																	<li>Increase involvement of seniors through informal meets and try to get product level outputs</li>
+																	<li>Give a purpose to each and every learning session that is organized</li>
+													</p><br>
+													<a href="https://stab-iitb.org/electronics-club" class="btn btn-lg btn-primary">Visit Website</a>
+													</div>
 											</div>
-									</div><!--/col-->
-									<div class="col-sm-8 col-md-4 margin-b-30">
-											<div class="feature-box-center text-center">
-													<i class="ion-ios-cog-outline"></i>
-													<h4 class="text-capitalize">Krittika</h4>
-													<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-													</p>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="f3">
+									 <div class='row vertical-align-child'>
+													<div class="col-md-6">
+															<h3>Krittika</h3>
+															<p>
+															Every one of us is amazed by the spectacle of the night sky and feels curious about its mysteries that lay hidden in plain sight. But very few follow it up as they grow up. At Krittika, we provide you an opportunity to do just that. Krittika is IIT Bombay’s focal point for amateur astronomers and casual stargazers alike. This year I want to focus my efforts on increasing the outreach of the club.
+															</p><br><a href="https://stab-iitb.org/krittika" class="btn btn-lg btn-primary">Visit Website</a>
+
+													</div>
+
+													 <div class="col-md-5">
+															 <img src="{% static 'assets/images/shot3.png' %}" alt="" class="img-responsive">
+													</div>
 											</div>
-									</div><!--/col-->
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="f4">
+									 <div class='row vertical-align-child'>
+													 <div class="col-md-5">
+															 <img src="{% static 'assets/images/shot-sm2.png' %}" alt="" class="img-responsive">
+													</div>
+
+													 <div class="col-md-6">
+															<h3>Maths and Physics Club</h3>
+															<p>
+															Our events vary from casual events such as movie screenings, demonstrations of physical phenomenon and quizzes to formal events such as lectures and Olympiad level paper solving. We have always motivated students to explore Physics and Maths, we also fund students for making their own demonstrations and experiments. Our flagship event, Bazinga, is a quiz that relies solely on your concepts rather than the dry and conventional algorithmic procedure of solving questions with pre-defined methods.
+															</p><br>
+															<a href="https://stab-iitb.org/math-and-physics-club" class="btn btn-lg btn-primary">Visit Website</a>
+													</div>
+											</div>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="f5">
+										<div class='row vertical-align-child'>
+
+
+													 <div class="col-md-6">
+															<h3>Robotics Club</h3>
+															<p>
+															<ul>
+																	<li>To get a ‘club feeling’ within the students of IIT Bombay</li>
+																	<li>Increasing participation of all the Student’s including PG’s, not just freshmen in club</li>
+																	<li>Bringing out a product and not just a working model out of projects and other club events activities</li>
+															</ul>
+													</p><br>
+													<a href="https://stab-iitb.org/robotics-club" class="btn btn-lg btn-primary">Visit Website</a>
+													</div>
+
+													 <div class="col-md-5">
+															 <img src="{% static 'assets/images/shot1.png' %}" alt="" class="img-responsive">
+													</div>
+											</div>
+									</div><div role="tabpanel" class="tab-pane fade" id="f6">
+										<div class='row vertical-align-child'>
+													 <div class="col-md-5">
+															 <img src="{% static 'assets/images/shot1.png' %}" alt="" class="img-responsive">
+													</div>
+
+													 <div class="col-md-6">
+															<h3>Web and Coding Club</h3>
+															<p>
+															While students in IIT Bombay learn programming in their first year, they usually drop it after that. One of our goals is to help these people carry on with programming and retain it as the useful skill it is. For the people who already program, we wish to maintain a community of programmers from all spheres and help people reach greater heights. We also have a focus on improving IITB's student participation in open source, thus increasing the institute's footprint and instilling a sense of giving back to the community.
+															</p><br>
+															<a href="http://www.wncc-iitb.org/" class="btn btn-lg btn-primary">Visit Website</a>
+													</div>
+											</div>
+									</div>
 							</div>
-							<div class="row">
-									<div class="col-sm-8 col-md-4 margin-b-30">
-											<div class="feature-box-center text-center">
-													<i class="ion-key"></i>
-													<h4 class="text-capitalize">Maths and Physics Club</h4>
-													<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-													</p>
-											</div>
-									</div><!--/col-->
-									<div class="col-sm-8 col-md-4 margin-b-30">
-											<div class="feature-box-center text-center">
-													<i class="ion-ios-person-outline"></i>
-													<h4 class="text-capitalize">Web and Coding Club</h4>
-													<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-													</p>
-											</div>
-									</div><!--/col-->
-							</div>
+
+					</div>
+
+
 					</div>
 			</section><!--end features section-->
 
@@ -123,9 +189,24 @@
 											<p>
 													Did you ever have an innovative idea but you just couldn’t get it going? Innovative technologies are the foundation of everything existing around you whether its new iPhone or your credit cards. But innovating new technologies needs money, inspiring leaders, dedicated teams and experience. This is where technovation steps in. What is Technovation? Technovation is a platform for students to float innovative projects, recruit teams, get funded, find mentors and realize their dream projects. Put simply its an expressway to innovation.
 											</p>
+											<a href="#" class="btn btn-lg btn-primary btn-rounded">Learn More</a>
+											<!-- <div class="row">
+													<div class="col-sm-6">
+															<ul class="list">
+																	<li><i class="ion-ios-arrow-thin-right"></i>Lorem ipsum dolor</li>
+																	<li><i class="ion-ios-arrow-thin-right"></i>Duis lacinia dolor quis</li>
+															</ul>
+													</div>
+													<div class="col-sm-6">
+															<ul class="list">
+																	<li><i class="ion-ios-arrow-thin-right"></i>Lorem ipsum dolor</li>
+																	<li><i class="ion-ios-arrow-thin-right"></i>Duis lacinia dolor</li>
+															</ul>
+													</div>
+											</div> -->
 									</div>
 									<div class="col-md-6 col-md-offset-1 margin-b-30">
-											<img src="{%static 'assets/images/shot1.png' %}" style="width:65%; height:80%;" alt="" class="img-responsive center-img">
+											<img src="assets/images/shot1.png" alt="" class="img-responsive center-img">
 									</div>
 							</div>
 							<div class="space-60"></div>
@@ -136,7 +217,7 @@
 					<div class="container">
 							<div class="row vertical-align-child">
 									<div class="col-md-7 margin-b-30">
-											<img src="{%static 'assets/images/shot2.jpg' %}" style="width:65%; height:80%;" alt="" class="img-responsive center-img">
+											<img src="{% static 'assets/images/shot2.jpg' %}" alt="" class="img-responsive">
 									</div>
 									<div class="col-md-5 margin-b-30">
 											<h3>
@@ -147,7 +228,7 @@
 
 													Tinkerers needed something better, so we've got it for you. Tinkerers’ Lab has all you will need for projects and prototyping. We’ve got modern electrical and mechanical equipment in place and more is coming soon. The fresh and enabling environment makes this the perfect place for ideating, implementing and innovating. We have coffee too!
 											</p>
-											<a href="https://stab-iitb.org/tinkerers-lab/" class="btn btn-lg btn-primary btn-rounded">Visit webpage</a>
+											<a href="#" class="btn btn-lg btn-primary btn-rounded">Learn More</a>
 									</div>
 							</div>
 					</div>
@@ -163,7 +244,7 @@
 							</div>
 							<div class="row">
 									<div class="col-sm-4 margin-b-30">
-											<div class="price-box ">
+											<div class="price-box">
 													<div class="price-header">
 															<h1>IITB RACING</h1>
 															<h4>FORMULA STUDENT</h4>
@@ -173,9 +254,12 @@
 the Formula Student 2014, the largest student motorsport competition in
 the world. Formula Student is run by the Institute of Mechanical
 Engineers- IMechE, a UK based body, which challenges student engineers
-to design, build and race a single seat race-car within a year.</li>
+to design, build and race a single seat race-car within a year.<br><br><br><br></li>
 
 													</ul>
+													<div class="price-footer">
+															<a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+													</div>
 											</div>
 									</div><!--/col-->
 									<div class="col-sm-4 margin-b-30">
@@ -191,9 +275,12 @@ working technocrats ranging from bright-eyed freshmen to driven senior
 undergraduates and tech-experienced post-graduates spanning various
 branches of engineering like Mechanical, Electrical, Software,
 Aerospace, Material Science and Civil at Indian Institute of Technology
-Bombay (IIT Bombay).</li>
+Bombay (IIT Bombay).<br><br><br></li>
 
 													</ul>
+													<div class="price-footer">
+															<a href="#" class="btn btn-rounded btn-white-border">VISIT WEBSITE</a>
+													</div>
 											</div>
 									</div><!--/col-->
 									<div class="col-sm-4 margin-b-30">
@@ -213,12 +300,15 @@ Satellites could be test-beds for new technology that is being developed
 in the institute and also a method for space qualification.</li>
 
 													</ul>
+													<div class="price-footer">
+															<a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+													</div>
 											</div>
 									</div><!--/col-->
 							</div><!-- /ROW -->
 							<div class="row">
 									<div class="col-sm-4 margin-b-30">
-											<div class="price-box best-plan">
+											<div class="price-box">
 													<div class="price-header">
 															<h1>Mars Rover</h1>
 															<h4>Mars Society of India</h4>
@@ -235,10 +325,13 @@ our reach throughout the scientific community of India as well as
 beyond. </li>
 
 													</ul>
+													<div class="price-footer">
+															<a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+													</div>
 											</div>
 									</div><!--/col-->
 									<div class="col-sm-4 margin-b-30">
-											<div class="price-box">
+											<div class="price-box best-plan">
 													<div class="price-header">
 
 															<h1>Innovation Cell</h1>
@@ -250,13 +343,16 @@ formerly known as UMIC (Unmesh Mashruwala Innovation Cell), aims to
 foster an atmosphere of creativity, innovation, discovery and
 exploration on the campus. Innovation Cell provides infrastructural
 facilities to nurture inventions among students from various
-disciplines.</li>
+disciplines.<br><br><br><br><br></li>
 
 													</ul>
+													<div class="price-footer">
+															<a href="#" class="btn btn-rounded btn-white-border">VISIT WEBSITE</a>
+													</div>
 											</div>
 									</div><!--/col-->
 									<div class="col-sm-4 margin-b-30">
-											<div class="price-box best-plan">
+											<div class="price-box">
 													<div class="price-header">
 
 															<h1>Team Shunya</h1>
@@ -273,6 +369,9 @@ transmission of the knowledge and the research in the field of the green
 buildings, in particular solar energy.</li>
 
 													</ul>
+													<div class="price-footer">
+															<a href="#" class="btn btn-rounded btn-dark-border">VISIT WEBSITE</a>
+													</div>
 											</div>
 									</div><!--/col-->
 							</div>
