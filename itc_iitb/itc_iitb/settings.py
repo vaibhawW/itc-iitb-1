@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = (
     'aero',
     'erc',
-    'krittika',
+    'biotech',
+    # 'krittika',
     'main',
     'srg',
     'django.contrib.admin',

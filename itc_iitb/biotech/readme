@@ -1,0 +1,24 @@
+For Blogs:
+	url	:	stab-iitb.org/biotech-club/blog/{blogNumber}	
+
+			this will give the blog corresponding to {blogNumber} post
+
+	Adding Post:
+			You can add blogs @ template/biotech/blog/{blogNumber}.html
+			But you need to index them.
+			Add your blog to template/biotech/blog.html
+
+			**in views update blogCount to total number of blogs in your page (i.e. number corresponding to your latest post)
+
+For Tutorials:
+	url	:	stab-iitb.org/biotech-club/tutorial/{tutNumber}	
+
+			this will give the blog corresponding to {tutNumber} post
+
+	Adding Post:
+			You can add blogs @ template/biotech/blog/{tutNumber}.html
+			But you need to index them.
+			Add your blog to template/biotech/tutorial.html
+
+			**in views update tutCount to total number of blogs in your page (i.e. number corresponding to your latest post)
+
