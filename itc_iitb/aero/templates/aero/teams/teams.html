@@ -2,111 +2,80 @@
 {% load staticfiles %}
 {% block fbpost %}
 <!-- EXAMPLE
-<a href="#">
-	<img src="{% static  'assets/images/img1.jpg' %}" alt="" width="70">
-</a>
-<div class="post-content">
-	<h5><a href="#">FB  ID NEEDED</a></h5>
-	<span>UPdATE THIS</span>
-</div>
--->
+	<a href="#">
+		<img src="{% static  'assets/images/img1.jpg' %}" alt="" width="70">
+	</a>
+	<div class="post-content">
+		<h5><a href="#">FB  ID NEEDED</a></h5>
+		<span>UPdATE THIS</span>
+	</div>
+	-->
 {% endblock %}
-
-
 {% block mainpost %}
-	<section id="team" style="list-style-type:none;background-color: #f5f5f0;overflow:hidden; ;">
-			<h3 class="text-center" style="padding-top:-2px; padding-bottom:-100px; background-color:white">
-			<hr class="linespecial">
+<section id="team" style="list-style-type:none;background-color: #f5f5f0;overflow:hidden; ;">
+
+	<h3 style="padding-top:-2px; padding-bottom:-100px; background-color:white; text-align:center">
+		<hr>
 			<span>Manager</span>
-			<hr class="linespecial">
-			</h3>
-			<div class="row">
-<div class="col-sm-6">
-<center>
-	<figure class="imagebox" style="padding:2%">
-		<div class="member-image">
-			<img src= "https://stab-iitb.org/assets/images/2015/club_teams/Yogesh Kumar" style="height:300px;width:300px">
-		</div><!-- /.member-image -->
-	</figure>
-	<div style="padding:2%">
-		<div class="surnameBox">
-			Yogesh Kumar<br>
-			<div class="postbox">Manager</div>
-		</div>
-	</div>
-</center>
-</div><!-- /.col -->
-<div class="col-sm-6">
-<center>
-	<figure class="imagebox" style="padding:2%">
-		<div class="member-image">
-			<img src= "https://stab-iitb.org/assets/images/2015/club_teams/Sarvesh Hire" style="height:300px;width:300px">
-		</div><!-- /.member-image -->
-	</figure>
-	<div style="padding:2%">
-		<div class="surnameBox">
-			Sarvesh Hire<br>
-			<div class="postbox">Manager</div>
-		</div>
-	</div>
-</center>
-</div><!-- /.col -->
-			</div><!-- /.row -->
+		<hr>
+	</h3>
 
+	<div class="row">
+		<div class="col-sm-6">
+			<center style="padding:3px;">
+				<img src= "{% static 'aero/assets/images/Yogesh.jpeg' %}" height="300" widht="300" style="margin:5px;position:relative">
+				<div style="padding:2%">
+						<span style="font-size:30px;padding-top:400px">Yogesh Kumar</span><br>
+						Manager
+				</div>
+			</center>
+		</div>
+		<!-- /.col -->
+		<div class="col-sm-6">
+			<center style="padding:3px;">
+				<img src= "{% static 'aero/assets/images/Sarvesh.jpeg' %}" height="300" widht="300" style="margin:5px;position:relative">
+				<div style="padding:2%">
+						<span style="font-size:30px;padding-top:400px">Yogesh Kumar</span><br>
+						Manager
+				</div>
+			</center>
+		</div>
+	</div>
 
-			<h3 class="text-center" style="padding-top:-20px; padding-bottom:-100px; background-color:white">
-			<hr class="linespecial">
-			<span>UG Conveners</span>
-			<hr class="linespecial">
-			</h3>
-			<div class="row text-center" style="padding:2%">
-			  <div class="col-sm-3 thumb">
-<div name="Element1">
-	<center>
-	<img src= "https://stab-iitb.org/assets/images/2016/club_teams/Kartik Mahesh.jpg" class="UGConvImages">
-	<div style="padding:2%">
-		<div class="surnameBox1">
-			Kartik Mahesh
+	<h3 class="text-center" style="padding-top:-20px; padding-bottom:-100px; background-color:white">
+		<hr>	<span>UG Conveners</span>	<hr>
+	</h3>
+
+	<div style="padding:5px">
+
+		<div class="row">
+			<div class="col-sm-3 " display="overflow:hidden">
+				<center>
+					<img src="{% static 'aero/assets/images/Kartik.jpg' %}" class="img-thumbnail" style="height:200px;	" > 
+					Kartik Mahesh
+				</center>
+			</div>
+		<!-- /.col -->
+			<div class="col-sm-3 " display="overflow">
+				<center>
+					<img src= "{% static 'aero/assets/images/Athul.jpg' %}"  class="img-thumbnail" style="height:200px;">
+					Atul
+				</center>
+			</div>
+		<!-- /.col -->
+			<div class="col-sm-3">
+				<center>
+					<img src= "{% static 'aero/assets/images/Riya.jpg' %}" class="img-thumbnail" style="height:200px;	">
+					Riya Jain
+				</center>
+			</div>
+			<div class="col-sm-3">
+				<center>
+					<img src= "{% static 'aero/assets/images/Ashish.jpg' %}" class="img-thumbnail" style="height:200px;	">
+					Ashish Kumar
+				</center>
+			</div>
 		</div>
 	</div>
-	</center>
-</div>
-			  </div><!-- /.col -->
-			  <div class="col-sm-3 thumb">
-<div name="Element1">
-	<center>
-	<img src= "https://stab-iitb.org/assets/images/2016/club_teams/Athul.jpg" class="UGConvImages">
-	<div style="padding:2%">
-		<div class="surnameBox1">
-			Atul
-		</div>
-	</div>
-	</center>
-</div>
- </div><!-- /.col -->
-   <div class="col-sm-3 thumb">
-<div name="Element1">
-	<center>
-	<img src= "https://stab-iitb.org/assets/images/2016/club_teams/Riya Jain.jpg" class="UGConvImages">
-	<div style="padding:2%">
-		<div class="surnameBox1">
-			Riya Jain
-		</div>
-	</div>
-	</center>
-</div>
-			  </div><!-- /.col -->
-			  <div class="col-sm-3 thumb">
-<div name="Element1">
-	<center>
-	<img src= "https://stab-iitb.org/assets/images/2016/club_teams/Ashish Kumar.jpg" style="height:150px;width:150px;">
-	<div style="padding:2%;padding-right">
-		<div class="surnameBox1">
-			Ashish Kumar
-		</div>
-	</div>
-	</center>
-</div>
-			  </div><!-- /.col -->
-	   </section>
+</section>
 {% endblock %}

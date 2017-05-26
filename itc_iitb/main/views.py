@@ -1,11 +1,12 @@
 from django.shortcuts import render
 
 # Create your views here.
+def index(request):
+    arr={'title':'STAB|IITB'}
+    return render(request,'main/index.html',arr)
+
 def alumni(request):
     return render(request,'alumni/alumni.html')
-
-def index(request):
-    return render(request,'main/index.html')
 
 def team2012(request):
     return render(request,'team/2012-13/team.html')

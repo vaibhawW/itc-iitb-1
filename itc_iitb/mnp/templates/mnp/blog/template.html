@@ -1,0 +1,97 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	{% block includeTop %} {% endblock %}
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+<!-- 	<div id="fb-root"></div> -->
+	<meta name="twitter:title" content="Latest Posts">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="{% static 'mnp/assets/images/about.png'%}g">
+	<meta property="og:locale" content="India">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Latest Posts">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="cleartype" content="on">
+	<script>
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<link href="mnp/assets/xml/feed.xml" type="application/atom+xml" rel="alternate" title="Maths & Physics Club Feed">
+	<link rel="stylesheet" href="{% static 'mnp/assets/css/main.css' %}">
+	<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+	<link rel="stylesheet" href="{% static 'mnp/assets/css/font-awesome.css' %}">
+	<script src="{% static 'mnp/assets/js/modernizr-2.7.1.custom.min.js' %}"></script>
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<link rel="shortcut icon" href="{% static 'mnp/assets/icons/favicon.ico' %}">
+	<link rel="shortcut icon" href="{% static 'mnp/assets/icons/favicon.png' %}">
+	<link rel="apple-touch-icon-precomposed" href="http://mnp-club.github.io/images/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'mnp/images/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'mnp/images/apple-touch-icon-114x114.png' %}">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'mnp/images/apple-touch-icon-144x144.png' %}">
+</head>
+
+<body id="page">
+	<div class="navigation-wrapper">
+		<nav role="navigation" id="site-nav" class="animated drop">
+			<ul>
+				<li><a href="/mnp/about">About</a></li>
+				<li><a href="/mnp/blog">Blog</a></li>
+				<li><a href="/mnp/projects">Projects</a></li>
+				<li><a href="/mnp/events">Events</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	{% block bodyContent %} {% endblock %}
+	<div class="footer-wrapper">
+		<footer role="contentinfo" class="entry-wrapper">
+			<span>&copy; 2017 Maths And Physics Club.</span>
+			<div class="">
+				<a href="https://facebook.com/mnpiitb" title="Maths And Physics Club on Facebook" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+				<a href="http://mnp-club.github.io" title="Maths And Physics Club" target="_blank"><i class="fa fa-github-square"></i></a>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+	var BASE_URL = 'http://mnp-club.github.io';
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+	window.jQuery || document.write('<script src=\"{% static "mnp/assets/js/jquery-1.9.1.min.js" %}\"><\/script>')
+	</script>
+	<script src="{% static 'mnp/assets/js/scripts.min.js' %}"></script>
+	<script>
+	var _gaq = _gaq || [];
+	var pluginUrl =
+		'https://www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	_gaq.push(['_setAccount', 'UA-78761274-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = 'https://stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+</body>
+
+</html>

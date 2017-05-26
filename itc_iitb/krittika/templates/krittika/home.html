@@ -1,0 +1,38 @@
+{% extends 'krittika/template.html' %}
+{% load static %}
+{% block bodyContent %}
+			<div class="container animated fadeIn">
+				<div class="row">
+					<a href="/krittika">
+					<img src="{% static 'krittika/assets/img/krittika-logo.png' %}" class="zoombtn animated ">
+					</a>
+					<h3 class="title">
+						<a class="zoombtn" href="/krittika">
+							<p style="font-size:2.5rem;font-weight:305">Krittika</p>
+						</a>
+					</h3>
+					<hr class="hr-line">
+					<h3 class="title">
+						<a href="/krittika">
+							<p style="font-size:1.8rem;font-weight:300">The Astronomy Club of IIT Bombay</p>
+						</a>
+					</h3>
+					<hr class="hr-line">
+					<h3 class="title" style="font-size:30px;">
+						<a class="social-btn" href="https://www.facebook.com/groups/krittika.iitb/" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-facebook-square"></i></a>
+					</h3>
+					<hr class="hr-line">
+					<h3 class="title">
+						<a class="btn zoombtn" href="/krittika/about">
+						About Us
+						</a>
+						<a class="btn zoombtn" href="/krittika/team">
+						Team
+						</a>
+						<a class="btn zoombtn" href="/krittika/resources">
+						Resources
+						</a>
+					</h3>
+				</div>
+			</div>
+{% endblock %}	

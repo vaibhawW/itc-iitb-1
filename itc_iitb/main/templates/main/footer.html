@@ -1,22 +1,20 @@
 {% load staticfiles %}
-<footer class="footer">
-  <div class="space-10"></div>
-  <div class="container">
-    <div class="row vertical-align-child">
-      <div class="col-md-3 margin-b-30">
-        <div class="margin-b-20">
-          <a href="#">
-            <img src="{% static  'assets/images/logo-light.png' %}" alt="">
-          </a>
-        </div>
-        </div>
-        <p>
-          We are the Students' Technical Activities Body at IIT Bombay.
-        </p>
 
-      <div class="col-md-2 margin-b-70">
+<footer class="footer" style="width:100%;padding:10px;overflow: hidden">
+  <div class="space-10"></div>
+   <center>
+    <div class="row">
+      <div class="col-md-3" style="display: table">
+        <div>
+          <a href="#"><img src="{% static  'assets/images/logo-light.png' %}" alt=""></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+          We are the Students' Technical Activities Body at IIT Bombay.
+      </div>
+
+      <div class="col-md-3">
         <ul class="list-unstyled">
-          <li><br></li>
           <li><a href="#">Contact Us</a></li>
           <ul class="list-inline social">
             <li><a href="https://www.facebook.com/stab.iitb"><i class="ion-social-facebook"></i></a></li>
@@ -26,13 +24,7 @@
           </ul>
         </ul>
       </div>
-      <div class="col-md-2 margin-b-70">
-        <ul class="list-unstyled">
-        </ul>
-      </div>
-      <div class="col-md-300 margin-b-70" style="float:right">
-        <span>&copy;2016 STAB-IITB. All rights reserved </span>
-      </div>
     </div>
-  </div>
+  </center>
 </footer>
+<span style="letter-spacing: 5px;font-size: 10px;line-height: 12px">&copy;2016 STAB-IITB. All rights reserved </span>

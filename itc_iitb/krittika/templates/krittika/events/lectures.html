@@ -1,0 +1,28 @@
+{% extends 'krittika/template.html' %} {% load static %} {% block bodyContent %}
+<div class="wrapper animated fadeIn">
+    <div class="content">
+        <div class="post-title">
+            <h1>Lectures</h1>
+            <a class="btn zoombtn" href="/krittika">
+                <i class="fa fa-home"></i>
+            </a>
+        </div>
+        <div class="post-list">
+            <ul>
+                <li class="wow fadeInLeft" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;">
+                    <a class="zoombtn" href="/krittika/lecture1">Sun</a>
+                    <p>The most famous star of all times</p>
+                    <a href="/krittika/events/lectures/?L=1" class="btn zoombtn">Read More</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="wow fadeInLeft" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;">
+                    <a class="zoombtn" href="/krittika/lectures">History of Mathematical Astronomy</a>
+                    <p>A mathematical introduction to Astronomy</p>
+                    <a href="/krittika/events/lectures/?L=2" class="btn zoombtn">Read More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

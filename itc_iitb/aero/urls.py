@@ -24,7 +24,6 @@ urlpatterns = [
     url(r'events$', ListView.as_view(queryset=Event.objects.all().order_by("-happeningdate"),template_name="aero/events/events.html"),name='events'),
     url(r'gallery$',views.gallery,name='gallery'),
     url(r'rcplanes$',views.rcplane,name='rcplane'),
-    url(r'search$',views.search,name='search'),
     url(r'team$',views.team,name='team'),
     url(r'vision$', views.vision,name='vision'),
 ]

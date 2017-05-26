@@ -1,79 +1,67 @@
-{% extends 'main/index.html' %}
-{% load staticfiles %}
-		<!DOCTYPE html>
-		<html lang="en" style="cursor: url('{% static  'assets/images/plane.cur' %}') , default;">
-			<head>
-				<meta charset="utf-8">
-				<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>
-{% block headtitle %}
-ITC | IITB
-{%endblock%}
-				</title>
-				<!-- Bootstrap And CSS -->
-				<link href="{% static  'events/css/style.css' %}" rel="stylesheet">
-				<link href="{% static  'team/css/style.css' %}" rel="stylesheet">
-				<link href="{% static  'team/css/style.css' %}" rel="stylesheet">
-				<link href="{% static  'assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-				<link href="{% static  'assets/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
-				<link href="{% static  'assets/bower_components/flexslider/flexslider.css' %}" rel="stylesheet">
-				<link rel='stylesheet' type="text/css" href="{% static  'assets/dzsparallaxer/dzsparallaxer.css' %}"/>
-				<!--main css file-->
-				<link href="{% static  'assets/css/style.css' %}" rel="stylesheet">
-				<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-				<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-				<!--[if lt IE 9]>
-				  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-				  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-				<![endif]-->
-			</head>
-			{% block body %}
-			<body style="cursor: url('{% static  'assets/images/plane.cur' %}') , default;" onload="revamp()">
-				<!--pre-loader-->
-				<div id="preloader"></div>
-				<!--pre-loader-->
-				<!--back to top-->
-				<a href="#" class="scrollToTop"><i class="ion-ios-arrow-up"></i></a>
-				<!--back to top end-->
-				{% block nav %}
-				{% include "main/navbars/nav-light.html" %}
-				{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="cursor: url('{% static  'assets/images/plane.cur' %}') , default;">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			{{title}}
+		</title>
+		<link href="{% static 'aero/assets/images/logo-shortcut.png' %}" rel="shortcut icon" >
+		<!-- Bootstrap And CSS -->
+		<link href="{% static  'assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+		<link href="{% static  'assets/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+		<link href="{% static  'assets/bower_components/flexslider/flexslider.css' %}" rel="stylesheet">
+		<link rel='stylesheet' type="text/css" href="{% static  'assets/dzsparallaxer/dzsparallaxer.css' %}"/>
+		<!--main css file-->
+		<link href="{% static  'assets/css/style.css' %}" rel="stylesheet">
+	</head>
+	<body style="cursor: url('{% static  'assets/images/plane.cur' %}') , default;" onload="revamp()">
+		<!--pre-loader-->
+		<div id="preloader"></div>
+		<!--pre-loader-->
+		<!--back to top-->
+		<a href="#" class="scrollToTop"><i class="ion-ios-arrow-up"></i></a>
+		<!--back to top end-->
+		
+			{% include "main/navbars/nav-light.html" %}
+		
 
-					<div class="dzsparallaxer auto-init" data-options='{direction: "reverse"}' style="height: 450px;">
+			<div class="dzsparallaxer auto-init" data-options='{direction: "reverse"}' style="height: 450px;">
 
-					<div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url({% static  'assets/images/bg3.png' %})">
-					</div>
-					<div class=" parallax-text center-it page-title text-center">
-						<h1 class="text-uppercase" style="font-size:400%">AEROMODELLING CLUB</h1>
+			<div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url({% static  'assets/images/bg3.png' %})">
+			</div>
+			<div class=" parallax-text center-it page-title text-center">
+				<h1 class="text-uppercase" style="font-size:400%">AEROMODELLING CLUB</h1>
 
-					</div>
-				</div><!--end page header-->
+			</div>
+		</div><!--end page header-->
+		
+	   	<div class="container">
+		   <div class="space-90"></div>
+			<div class="row">
+				<div class="col-sm-3" style="float:left;">
+					 <div class="sidebar-widget margin-b-40" style="float:LEFT; width:60%">
+							<hr style="margin-bottom:4px;">
+							 <a href="/aeromodelling-club" style="padding-left:15%">Home</a>
+							<hr style="margin-top:4px; margin-bottom:4px">
+							 <a href="/aeromodelling-club/vision" style="padding-left:15%"> Vision</a>
+							<hr style="margin-top:4px; margin-bottom:4px">
+							 <a href="/aeromodelling-club/events" style="padding-left:15%"> Events</a>
+							<hr style="margin-top:4px; margin-bottom:4px">
+							 <a href="/aeromodelling-club/team" style="padding-left:15%"> Team</a>
+							<hr style="margin-top:4px; margin-bottom:4px">
+							 <a href="/aeromodelling-club/rcplanes" style="padding-left:15%"> RC Planes</a>
+							<hr style="margin-top:4px; margin-bottom:4px">
+							 <a href="/aeromodelling-club/gallery" style="padding-left:15%"> Gallery</a>
+							<hr style="margin-top:4px; margin-bottom:4px">
 
-			   <div class="container">
-				   <div class="space-90"></div>
-					<div class="row">
-						<div class="col-sm-3" style="float:left;">
-							 <div class="sidebar-widget margin-b-40" style="float:LEFT; width:60%">
-									<hr style="margin-bottom:4px;">
-									 <a href="/aeromodelling-club/index" style="padding-left:15%">Home</a>
-									<hr style="margin-top:4px; margin-bottom:4px">
-									 <a href="/aeromodelling-club/vision" style="padding-left:15%"> Vision</a>
-									<hr style="margin-top:4px; margin-bottom:4px">
-									 <a href="/aeromodelling-club/events" style="padding-left:15%"> Events</a>
-									<hr style="margin-top:4px; margin-bottom:4px">
-									 <a href="/aeromodelling-club/team" style="padding-left:15%"> Team</a>
-									<hr style="margin-top:4px; margin-bottom:4px">
-									 <a href="/aeromodelling-club/rcplanes" style="padding-left:15%"> RC Planes</a>
-									<hr style="margin-top:4px; margin-bottom:4px">
-									 <a href="/aeromodelling-club/gallery" style="padding-left:15%"> Gallery</a>
-									<hr style="margin-top:4px; margin-bottom:4px">
-
-							</div><!--end sidebar widget-->
-							<div class="sidebar-widget margin-b-40" style="float:LEFT; width:100%">
-								<h4>Latest Posts</h4>
-								<ul class="list-unstyled recent-post">
-									<li class="clearfix">
+					</div><!--end sidebar widget-->
+					<div class="sidebar-widget margin-b-40" style="float:LEFT; width:100%">
+						<h4>Latest Posts</h4>
+						<ul class="list-unstyled recent-post">
+							<li class="clearfix">
 {% block fbpost %}
 {% endblock %}
 									</li>
@@ -90,8 +78,7 @@ ITC | IITB
 					</div>
 				</div>
 				<div class="space-90"></div>
-			</body>
-			{% endblock %}
+
 				<!--end page-->
 				{% block footer %}
 				{% include "main/footer.html" %}
@@ -134,4 +121,5 @@ ITC | IITB
 				<script src="{% static  'assets/js/modernizr.custom.97074.js' %}" type="text/javascript"></script>
 				<script src="{% static  'assets/js/template-custom.js' %}" type="text/javascript"></script>
 				<script src="{% static  'assets/dzsparallaxer/dzsparallaxer.js' %}" type="text/javascript"></script>
+			</body>
 		</html>

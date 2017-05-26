@@ -1,0 +1,374 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Quantum Computing &#8211; Maths & Physics Club</title>
+<meta name="description" content="The following article was written for and published by the annual newsletter of Dept. of Physics, IIT Bombay in collaboration with Insight, the student media body of IITB, in the Autumn semester of my freshmen year (2015). It is aimed at providing a brief info to the latest advancements in the field of quantum computing and what lies ahead.
+
+">
+<meta name="keywords" content="Quantum Physics">
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		    if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+				  fjs.parentNode.insertBefore(js, fjs);
+				  }(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Quantum Computing">
+<meta name="twitter:description" content="The following article was written for and published by the annual newsletter of Dept. of Physics, IIT Bombay in collaboration with Insight, the student media body of IITB, in the Autumn semester of my freshmen year (2015). It is aimed at providing a brief info to the latest advancements in the field of quantum computing and what lies ahead.
+
+">
+
+<meta name="twitter:creator" content="@toshi_physics">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://mnp-club.github.io/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="India">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quantum Computing">
+<meta property="og:description" content="The following article was written for and published by the annual newsletter of Dept. of Physics, IIT Bombay in collaboration with Insight, the student media body of IITB, in the Autumn semester of my freshmen year (2015). It is aimed at providing a brief info to the latest advancements in the field of quantum computing and what lies ahead.
+
+">
+<meta property="og:url" content="http://mnp-club.github.io/blog/quantum-computation/">
+<meta property="og:site_name" content="Maths & Physics Club">
+
+
+
+
+
+<link rel="canonical" href="http://mnp-club.github.io/blog/quantum-computation/">
+<link href="http://mnp-club.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Maths & Physics Club Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://mnp-club.github.io/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://mnp-club.github.io/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://mnp-club.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://mnp-club.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://mnp-club.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://mnp-club.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://mnp-club.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://mnp-club.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://mnp-club.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://mnp-club.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://mnp-club.github.io/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://mnp-club.github.io/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://mnp-club.github.io/projects/" >Projects</a></li>
+		  
+		    
+		    <li><a href="http://mnp-club.github.io/events/" >Events</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://mnp-club.github.io/" class="site-logo" rel="home" title="Maths & Physics Club"><img src="http://mnp-club.github.io/images/site-logo.png" width="200" height="200" alt="Maths & Physics Club logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://mnp-club.github.io/">Maths & Physics Club</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">Where Knowledge is Free...</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://mnp-club.github.io/tags/#Quantum Physics" title="Pages tagged Quantum Physics">Quantum Physics</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Quantum Computing</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://mnp-club.github.io/images/convener6.jpg" class="bio-photo" alt="Toshi Parmar bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Toshi Parmar</span></span>
+        <span class="entry-date date published"><time datetime="2017-01-09T15:49:07+05:30"><i class="fa fa-calendar-o"></i> January 09, 2017</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p><strong><em>The following article was written for and published by the annual newsletter of Dept. of Physics, IIT Bombay in collaboration with Insight, the student media body of IITB, in the Autumn semester of my freshmen year (2015). It is aimed at providing a brief info to the latest advancements in the field of quantum computing and what lies ahead.</em></strong></p>
+
+<p><img src="http://www.doc.ic.ac.uk/~ids/dotdot/misc/images/dilbert-dt970322_295.gif" alt="Quantum Computation" /></p>
+
+<h3 id="a-new-hope">A New Hope</h3>
+<p>Our story begins with a team of researchers at The University of New South Wales(UNSW), Australia, led by Andrew Dzurak who have successfully 
+accomplished the making of a two qubit logic gate in silicon, which is a crucial hurdle overcome in making quantum computers
+a reality. “What we have is a game changer,” says team leader Prof. Dzurak.</p>
+
+<p>“We’ve demonstrated a two qubit logic gate the central building block of a quantum computer and, significantly, done it in silicon. 
+Because we use essentially the same device technology as existing computer chips, we believe it will be much easier to manufacture 
+a fullscale processor chip than for any of the leading designs, which rely on more exotic technologies.”
+The key idea behind the working of the UNSW team has been the morphing of normal transistors, into defining quantum bits or ‘qubits’, 
+by ensuring that each transistor has a single electron associated with it, and representing the binary equivalent of numbers 0 and 1 
+by spin of the electron.</p>
+
+<p>The sentence makes sense quite ephemerally, so let’s deconstruct the concept in lyman’s language and restore freedom to our bound curiosity…</p>
+
+<h3 id="the-very-begining">The Very Begining</h3>
+
+<p>Essentially the concept of quantum computing involves use of quantum bits or ‘qubits’ instead of conventional bits in boolean algebra, 
+that can be coupled in a scalable manner to make up one and two qubit logic gates. 
+The numerous physical realisations of qubits, single photons, trapped ions, silicon and semiconductor quantum dots, 
+single defects or atoms in diamond etc. have to be sufficiently fault tolerant and conserved under time evolution, 
+with discrete and spaced eigenvalues that can be mapped onto an effective spin 1/2 system.</p>
+
+<p>The ideation for representing qubits as the spin of an electron was primarily proposed in 1968, 
+and sparked up with eminent physicist Richard Feynman proposing the possibility of a quantum computer in 1982.</p>
+
+<h3 id="that-which-makes-all-the-difference">That which makes all the difference</h3>
+
+<p>The edge that a quantum system has over the conventional is the property of entanglement and superposition of states, 
+i.e. a qubit’s existence is governed by superposition of the two basis states that denote conventional bits 0 and 1, 
+mathematically, a linear combination.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/237px-Bloch_sphere.svg.png" alt="Bloch Sphere" /></p>
+
+<p>The bloch sphere shown in the article, is a representation of a qubit with associated probability amplitudes, 
+with the two basis states represented in standard Dirac notation (The braket notation). 
+Thus considering two interacting qubits, four possible combinations yield, each weighed by a coefficient 
+that denotes the probability of existence of the system in that state.
+To specify a combination of two conventional bits, two information are coded, the value of both the bits, 
+while for the quantum system four information, the four coefficients. 
+Thus the information represented by an ‘n’ qubit system is exponentially large in comparison with its classical counterpart, 
+the former is essentially two raised to the latter.</p>
+
+<h3 id="but-the-world-is-not-all-cupcakes-and-rainbows">But the world is not all cupcakes and rainbows</h3>
+
+<p>The state of superposition cascades down to one of its basis states on observation,
+termed as the collapse of the governing Schrodinger wave function, essentially leading to us losing our data that boasted
+of exponentially large capacities to normal bit sized information.
+Thus, here lies the spinner, specific algorithms have to be applied to extract specific information out of a quantum system.
+Many such brilliant minds have risen to the occasion, among them, notably and famed are Peter Shor (Shor’s Algorithm, 1994), 
+Daniel Simon (Simon’s Algorithm, 1994) and Lov K. Grover (Grover’s Algorithm, 1996).</p>
+
+<p>Let’s take a look at what specific information can be extracted out -</p>
+
+<p>Shor’s algorithm is a quantum algorithm that addresses the problem of discrete logarithms and integer factorisation, 
+a problem so intricate that our public key cryptography schemes like the RSA rely on the computational intractability 
+in factoring large numbers for the most advanced classical computers.</p>
+
+<p>Simon’s algorithm deals with the computational analysis of decision tree complexity and solves the problem exponentially 
+faster than any known classical algorithm.</p>
+
+<p>Grover’s algorithm addresses database search, i.e. given a unique output produced by a black box function 
+(A function with unknown formulation but known mapping) it figures out the input with high probability, 
+addressing the problem in quadratically fewer queries than classical.</p>
+
+<p>Many more such algorithms exist, attacking with brute force, the issues that lie beyond the scope of classical computers.
+Another problem is that many of the quantum algorithms give probabilistic solutions, solutions with probability very close to one, 
+and which can be improved upon by repeated iterations but nevertheless its probabilistic. 
+Many others however, are fully deterministic and hence efficacious.</p>
+
+<p>The quantum computers can only respond to specific algorithms and tasks exponentially efficiently than classical, thus, 
+they are not the substitute for them, but an aid, for more technological and advanced sector. 
+Not every task that a normal personal computer does can be effectively performed with them.
+So wish the genie to show you a movie, and quantum computer would be useless trash. Wish to crack security codes for all online credit
+transfers, ye ol’ quantum computer would watch the world burn as it decrypts transactions.</p>
+
+<h3 id="further-not-so-farther-difficulties-ahead">Further, not-so-farther difficulties ahead</h3>
+
+<p>A big hurdle now is to remove decoherence from the system, isolating the system from the
+surroundings, cutting down its interactions that make the system decohere, and to do so
+economically and feasibly. Decoherence is irreversible and nonunitary and thus must be
+controlled if not eradicated. Currently superconducting qubits can be configured to remove
+setting in of significant decoherence in physically avoidable time lag, which typically ranges 
+between the order of nanoseconds to seconds at low temperatures, by cooling the qubit to 20milli kelvin or lower temperatures.</p>
+
+<p>Another problem that is now faced is to scale this system up to vast numbers of stable qubit registers or “q-registers”, 
+quantum mechanical analogues of classical processor registers.</p>
+
+<p>Unless a very efficient way is developed, optimum working is an impossibility.
+In this direction, Prof. Dzurak notes that the team has “recently patented a design for full scale
+quantum computer chip that would allow for millions of our qubits, all doing the same kind of calculations 
+we’ve just experimentally demonstrated.”</p>
+
+<p>The UNSW team’s research breakthrough has attacked three of the major requirements -<br />
+1) qubits that can be initialised to arbitrary values, 
+2) qubits with successful readout fidelities, 
+3) a universal CNOT quantum gate, faster than the decoherence time of the system, 
+with the fabrication process compatible with standard Complementary Metal Oxide Semiconductor (CMOS) technology that already exists
+ for manufacturing classical Si based semiconductor chips.
+Future experiments by this team will include improvements to facilitate full two qubit tomography. 
+Improvement by lowering the sensitivity to electrical noise is also targeted. 
+Though the two qubit system represents the smallest scalable system so far, it is consistent with current transistor sizes, offering the prospect of realizing a largescale
+quantum processor using the same silicon manufacturing technologies that have enabled the current information age.</p>
+
+<p>And lastly, on a more tender note,
+“Computers are physical objects, and computations are physical processes.
+What computers can or cannot compute is determined by the laws of physics alone.”
+– David Deutsch</p>
+
+<p>So we mustn’t lose faith. More breakthroughs are yet to arrive!</p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'mnp-club-github-io'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+
+ <!--   
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://mnp-club.github.io/blog/universe/" class="btn" title="The Universe and Beyond!">Previous</a>
+      
+      
+        <a href="http://mnp-club.github.io/blog/summer-of-science/" class="btn" title="Launching Summer of Science 2017">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Maths And Physics Club. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> </span>
+<div class="social-icons">
+	
+	<a href="https://facebook.com/mnpiitb" title="Maths And Physics Club on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	<a href="https://github.com/mnp-club" title="Maths And Physics Club on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://mnp-club.github.io';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://mnp-club.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://mnp-club.github.io/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ 'https://www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-78761274-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>

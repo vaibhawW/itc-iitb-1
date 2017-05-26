@@ -1,0 +1,62 @@
+{% extends 'krittika/template.html' %} {% load static %} {% block bodyContent %}
+<div class="wrapper animated fadeIn">
+  <div class="content">
+    <div class="post-title ">
+      <h1>Team</h1>
+      <a class="btn zoombtn" href="/krittika/">
+        <i class="fa fa-chevron-left"></i>
+      </a>
+    </div>
+    <center>
+      <h2>Manager</h2>
+    </center>
+    <style>
+      @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+      img {
+        width: 50%;
+       }
+      }
+    </style>
+    <figure class="middle">
+      <center>
+        <a href="https://www.facebook.com/nilaksh.aggarwal?fref=ts"><img src="{% static 'krittika/assets/img/team/nilaksh-dp.png' %}"></a>
+      </center>
+      <figcaption>
+        <center>
+          <h3>Nilaksh Kumar Aggarwal</h3></center>
+      </figcaption>
+    </figure>
+    <center>
+      <h2>UG Convenors</h2>
+    </center>
+    <figure class="half">
+      <a href="https://www.facebook.com/chinmay0301?fref=ts"><img src="{% static 'krittika/assets/img/team/chinmay-dp.png' %}"> </a>
+      <a href="https://www.facebook.com/gaurav.waratkar.5?fref=ts"><img src="{% static 'krittika/assets/img/team/gaurav-dp.png' %}"> </a>
+      <figcaption>
+        <center>
+          <h3>Chinmay Talegaonkar                                                     Gaurav Waratkar</h3></center>
+      </figcaption>
+    </figure>
+    <figure class="half">
+      <a href="https://www.facebook.com/yashvi.sharma.52"><img src="{% static 'krittika/assets/img/team/yashvi-dp.png' %}"> </a>
+      <a href="https://www.facebook.com/profile.php?id=100010041307477"><img src="{% static 'krittika/assets/img/team/tanya-dp.png' %}"> </a>
+      <figcaption>
+        <center>
+          <h3>Yashvi Sharma                                                              Tanya Choudhary   </h3></center>
+      </figcaption>
+    </figure>
+    <center>
+      <h2>PG Convenor</h2>
+    </center>
+    <figure class="middle">
+      <center>
+        <a href="https://www.facebook.com/amit.jharbade?fref=ts"><img src="{% static 'krittika/assets/img/team/amit-dp.png' %}"></a>
+      </center>
+      <figcaption>
+        <center>
+          <h3>Amit Jharbade</h3></center>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+{% endblock %}
