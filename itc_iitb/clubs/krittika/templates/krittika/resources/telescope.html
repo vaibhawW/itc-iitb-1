@@ -1,0 +1,37 @@
+{% extends 'krittika/template.html' %} {% load static %} {% block bodyContent %}
+<div class="wrapper animated fadeIn">
+  <div class="content">
+    <div class="post-title ">
+      <h1>Building your own Telescope</h1>
+      <h4>20 Jul 2016</h4>
+    </div>
+    <figure>
+      <center><img src="{% static 'krittika/assets/img/resources/resources-telescope.PNG' %}" /></center>
+    </figure>
+    <p>Yes, it “looks like a cannon,” but the above is really a ten-inch (measured by the diameter of the objective) Newtonian telescope that almost anybody can build. Here you will find plans to build a 6 inch telescope of similar design.</p>
+    <p><a href="{% static 'krittika/resources/Six-inchTelescopeOverviewwithPlywoodCutPattern.pdf' %}">Overview</a>
+      <br /> <a href="{% static 'krittika/resources/MaterialList.pdf' %}">Materials List</a>
+      <br /> <a href="{% static 'krittika/resources/SectionAofMakingaDobsonianTelescope.pdf' %}">Section A</a>
+      <br /> <a href="{% static 'krittika/resources/SectionBofMakingaDobsonianTelescope.pdf' %}">Section B</a>
+      <br /> <a href="{% static 'krittika/resources/SectionCofMakingaDobsonianTelescope.pdf' %}">Section C</a></p>
+    <div class="entry-meta">
+      <br>
+      <hr>
+      <span class="entry-tags"></span>
+      <!--
+<span class="social-share">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://stab-iitb.org/krittika/building-telescope/" title="Share on Facebook" class="tag">
+        <span class="term"><i class="fa fa-facebook-square"></i> Like</span>
+    </a>
+    <a href="https://twitter.com/intent/tweet?text=https://stab-iitb.org/krittika/building-telescope/" title="Share on Twitter" class="tag">
+        <span class="term"><i class="fa fa-twitter-square"></i> Tweet</span>
+    </a>
+    <a href="https://plus.google.com/share?url=https://stab-iitb.org/krittika/building-telescope/" title="Share on Google+" class="tag">
+            <span class="term"><i class="fa fa-google-plus-square"></i> +1</span>
+    </a>
+</span> -->
+      <div style="clear:both"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
